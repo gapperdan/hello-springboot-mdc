@@ -30,7 +30,8 @@ http://localhost:8080/mappings
 
 ### The AOP part
 Review the sample Spring Boot + AOP project here: https://github.com/gapperdan/hello-springboot-aop
-AOP will be configured to generate a random uuid to be used as the reference id in the log whenever a controller method is called (basically, a request to the /greeting endpoint)
+
+AOP will be configured to generate a random uuid to be used as the reference id in the log whenever a controller method is called (basically, a request to the /greeting endpoint).
 
 ### The MDC part
 * MDC = Mapped Diagnostic Context (more details: http://logback.qos.ch/manual/mdc.html)
