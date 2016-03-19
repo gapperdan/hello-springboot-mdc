@@ -11,8 +11,7 @@ public class RandomGeneratorServiceTest {
 
 	@Test
 	public void shouldReturnANumberBetween0and1000() {		
-		RandomGeneratorService rgs = new RandomGeneratorService();
-		int number = rgs.generate();			
+		int number = new RandomGeneratorService().generate();
 		assertThat(true, is(number <= MAX_NUMBER));		
 	}
 }
