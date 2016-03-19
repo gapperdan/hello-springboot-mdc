@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- Log message format -->
+    <layout>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} | refId=%X{refId} | %msg%n
+      </pattern>
+    </layout>
+  </appender>
+
+  <!-- Setting the root level of logging to INFO -->
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
