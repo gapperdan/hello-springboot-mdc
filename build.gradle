@@ -16,11 +16,6 @@ jar {
     baseName = 'hello-springboot-mdc'
     version =  '0.1.0'
 }
-
-springBoot {
-    mainClass = "com.gapperdan.hsbmdc.Application"
-}
-
 repositories {
     mavenCentral()
 }
