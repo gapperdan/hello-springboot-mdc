@@ -34,6 +34,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-logging")
     compile("org.springframework.boot:spring-boot-starter-aop")   
     compile("org.projectlombok:lombok:1.16.8")
+    compile("io.springfox:springfox-swagger2:2.4.0")
+    compile("io.springfox:springfox-swagger-ui:2.4.0")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 

@@ -16,22 +16,28 @@ or combined:
 ./gradlew clean build && java -Dspring.profiles.active=local -jar build/libs/hello-springboot-mdc-0.1.0.jar
 ```
 
-The port number is defined in the _application.properties_
+The context root and port number are defined in the _application.properties_
 ```
+server.contextPath=/hsbmdc
 server.port=8081
 ```
 
 To test:
 
-http://localhost:8081/greeting
+http://localhost:8081/hsbmdc/greeting
 
 Or with name parameter:
 
-http://localhost:8081/greeting?name=foo
+http://localhost:8081/hsbmdc/greeting?name=foo
 
 To see the provided endpoints:
 
-http://localhost:8081/mappings
+http://localhost:8081/hsbmdc/mappings
+
+To see the Swagger docs:
+
+http://localhost:8081/hsbmdc/swagger-ui.html#/
+
 
 ### The AOP part
 Review the sample Spring Boot + AOP project here: https://github.com/gapperdan/hello-springboot-aop
