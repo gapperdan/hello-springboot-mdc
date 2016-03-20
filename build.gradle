@@ -15,7 +15,12 @@ apply plugin: 'spring-boot'
 jar {
     baseName = 'hello-springboot-mdc'
     version =  '0.1.0'
+    manifest {
+        attributes("Implementation-Title": "hello-springboot-mdc",
+                   "Implementation-Version": version)
+    }
 }
+
 repositories {
     mavenCentral()
 }
