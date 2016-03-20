@@ -1,5 +1,12 @@
 # Spring Boot + AOP + MDC (Mapped Diagnostic Context) Tutorial
 
+Other things implemented in this tutorial:
+* custom startup spring boot banner with _banner.txt_ 
+* API Swagger docs using springfox 
+* defining a context path in the _application.properties_
+* environment-based properties using _spring_profiles_active_
+* logging using _logback_
+
 To build:
 
 ```
