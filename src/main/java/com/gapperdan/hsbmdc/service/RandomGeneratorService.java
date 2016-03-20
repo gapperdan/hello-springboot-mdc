@@ -9,12 +9,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class RandomGeneratorService {
 	
+	private int maxNumber;
+	
 	private static final Logger logger = LoggerFactory.getLogger(RandomGeneratorService.class);
 	
+	public RandomGeneratorService(int maxNumber) {
+		this.maxNumber = maxNumber;
+	}
 	public int generate() {
 		logger.info("action=generating random number");
 		
 		Random random = new Random();
-		return random.nextInt(1000);
+		return random.nextInt(maxNumber);
 	}
 }

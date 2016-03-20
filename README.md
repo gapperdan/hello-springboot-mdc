@@ -8,12 +8,12 @@ To build:
 
 Then to run:
 ```
-> java -jar build/libs/hello-springboot-mdc-0.1.0.jar
+> java -Dspring.profiles.active=local -jar build/libs/hello-springboot-mdc-0.1.0.jar
 ```
 
 or combined:
 ```
-./gradlew clean build && java -jar build/libs/hello-springboot-mdc-0.1.0.jar
+./gradlew clean build && java -Dspring.profiles.active=local -jar build/libs/hello-springboot-mdc-0.1.0.jar
 ```
 
 The port number is defined in the _application.properties_

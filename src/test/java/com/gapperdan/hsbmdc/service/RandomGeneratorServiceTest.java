@@ -7,11 +7,9 @@ import org.junit.Test;
 
 public class RandomGeneratorServiceTest {
 	
-	final int MAX_NUMBER = 1000;
-
 	@Test
 	public void shouldReturnANumberBetween0and1000() {		
-		int number = new RandomGeneratorService().generate();
-		assertThat(true, is(number <= MAX_NUMBER));		
+		int number = new RandomGeneratorService(1000).generate();
+		assertThat(true, is(number <= 1000));		
 	}
 }
