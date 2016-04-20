@@ -22,7 +22,15 @@ public class AspectConfig {
 	
 	@Before("execution(* com.gapperdan.hsbmdc.controller..*.*(..))")
 	public void mdcPut(JoinPoint joinPoint) {
+		//to get method name
 		logger.info("added mdc key before calling "+joinPoint.getSignature().getName()+"()");
+		
+		//to get method args
+		Object[] methodArgs = joinPoint.getArgs();
+		for (Object oneArg: methodArgs) {
+			System.out.println("arg="+oneArg);
+		}
+		
 		MDC.put(REF_ID, UUID.randomUUID().toString().replace("-", "").substring(0, 12));
 	}	
 	
